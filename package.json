@@ -1,0 +1,32 @@
+{
+  "name": "mozilla-blogs-dark",
+  "title": "Mozilla Blogs Dark",
+  "version": "1.0.1",
+  "description": "Dark theme for the Mozilla Blogs",
+  "license": "GPL-3.0",
+  "repository": "AfroThundr3007730/Mozilla-Blogs-Dark",
+  "homepage": "https://github.com/AfroThundr3007730/Mozilla-Blogs-Dark",
+  "main": "mozilla-blogs-dark.user.css",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-silverwind": "^3.0.2",
+    "perfectionist": "^2.4.0",
+    "ver": "^4.3.0",
+    "stylelint": "^10.0.1",
+    "stylelint-config-standard": "^18.3.0",
+    "updates": "^8.0.3"
+  },
+  "scripts": {
+    "authors": "bash tools/authors",
+    "clean": "npm run perfectionist && node tools/fix-perfectionist.js",
+    "eslint": "eslint --quiet --color tools/*.js",
+    "lint": "npm run eslint && npm run stylelint",
+    "major": "npx ver -p major pocket-dark.user.css",
+    "minor": "npx ver -p minor pocket-dark.user.css",
+    "patch": "npx ver -p patch pocket-dark.user.css",
+    "perfectionist": "npx perfectionist mozilla-blogs-dark.user.css mozilla-blogs-dark.user.css --indentSize 2 --maxAtRuleLength 250",
+    "stylelint": "npx stylelint --quiet --color -- mozilla-blogs-dark.user.css",
+    "test": "npm run eslint && npm run stylelint",
+    "update": "npx updates -cu && npm install"
+  }
+}
