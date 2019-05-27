@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Mozilla Blogs Dark
-@version      1.0.1
+@version      1.0.2
 @description  Dark theme for the Mozilla Blogs
 @namespace    AfroThundr3007730
 @author       AfroThundr
@@ -15,42 +15,36 @@ domain("blog.nightly.mozilla.org") {
     color: #aaa;
     background: #111;
   }
-
-  .nav-global,
-  .nav-paging,
-  #categories .cat-list a.on,
+  .nav-global, .nav-paging, #categories .cat-list a.on,
   .single .category-news .entry-content h3,
   .page .category-news .entry-content h3,
   .single .category-news .entry-content h4,
   .page .category-news .entry-content h4 {
     background: #222;
   }
-
-  .entry-link:link,
-  .entry-link:visited,
-  .nav-paging a,
-  #related-posts a:link,
-  #related-posts a:visited,
-  .nav-mozilla-menu a {
+  .entry-link:link, .entry-link:visited, .nav-paging a, #related-posts a:link,
+  #related-posts a:visited, .nav-mozilla-menu a {
     color: #00a7e0;
   }
-
   .entry-info {
     color: #484848;
   }
-
-  .pagination a,
-  .pagination .current,
-  #categories.is-active,
-  #sidebar.is-active {
+  .pagination a, .pagination .current, #categories.is-active, #sidebar.is-active {
     background: #333;
   }
-
-  #sidebar .widget_nav_menu li,
-  #sidebar .widget_recent_entries li,
-  #sidebar .widget_recent_comments li,
-  #categories .cat-list a,
+  #sidebar .widget_nav_menu li, #sidebar .widget_recent_entries li,
+  #sidebar .widget_recent_comments li, #categories .cat-list a,
   #categories .cat-list a:hover {
     background: #111;
+  }
+  .nav-global .logo a {
+    filter: invert(100%) brightness(60%);
+  }
+  #site-info .logo {
+    filter: brightness(50%);
+  }
+  .nav-global-twitter a::before, .nav-global-join a::before,
+  .nav-global-donate a::before {
+    filter: invert(50%);
   }
 }
