@@ -13,14 +13,14 @@
 domain("blog.nightly.mozilla.org") {
   body {
     color: #aaa;
-    background: #111;
+    background-color: #111;
   }
   .nav-global, .nav-paging, #categories .cat-list a.on,
   .single .category-news .entry-content h3,
   .page .category-news .entry-content h3,
   .single .category-news .entry-content h4,
   .page .category-news .entry-content h4 {
-    background: #222;
+    background-color: #222;
   }
   .entry-link:link, .entry-link:visited, .nav-paging a, #related-posts a:link,
   #related-posts a:visited, .nav-mozilla-menu a {
@@ -30,12 +30,12 @@ domain("blog.nightly.mozilla.org") {
     color: #484848;
   }
   .pagination a, .pagination .current, #categories.is-active, #sidebar.is-active {
-    background: #333;
+    background-color: #333;
   }
   #sidebar .widget_nav_menu li, #sidebar .widget_recent_entries li,
   #sidebar .widget_recent_comments li, #categories .cat-list a,
   #categories .cat-list a:hover {
-    background: #111;
+    background-color: #111;
   }
   .nav-global .logo a {
     filter: invert(100%) brightness(60%);
@@ -43,8 +43,23 @@ domain("blog.nightly.mozilla.org") {
   #site-info .logo {
     filter: brightness(50%);
   }
-  .nav-global-twitter a::before, .nav-global-join a::before,
-  .nav-global-donate a::before {
+  .nav-global-twitter a:before, .nav-global-join a:before,
+  .nav-global-donate a:before {
     filter: invert(50%);
+  }
+}
+@-moz-document domain("hacks.mozilla.org") {
+  body {
+    color: #9a9a9a;
+    background-color: #111;
+  }
+  .newsletter {
+    background-color: #222;
+  }
+  .footer {
+    background-color: #093153;
+  }
+  .header {
+    background-image: url("img/blueprint.png"), linear-gradient(to bottom, #0f2639, #093153);
   }
 }
