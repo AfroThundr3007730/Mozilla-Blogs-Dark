@@ -53,13 +53,24 @@ domain("blog.nightly.mozilla.org") {
     color: #9a9a9a;
     background-color: #111;
   }
-  .newsletter {
+  .newsletter, .post code, .post pre {
     background-color: #222;
+  }
+  .comments .children {
+    border-left-color: #333;
+  }
+  .article img[src*=".svg"] {
+    background-color: #ccc;
   }
   .footer {
     background-color: #093153;
   }
   .header {
     background-image: url("img/blueprint.png"), linear-gradient(to bottom, #0f2639, #093153);
+  }
+  button, input, optgroup, select, textarea {
+    background-color: #111;
+    border-color: #555;
+    color: #ccc;
   }
 }
