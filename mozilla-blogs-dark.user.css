@@ -73,4 +73,7 @@ domain("blog.nightly.mozilla.org") {
     border-color: #555;
     color: #ccc;
   }
+  hr.dino::after {
+    filter: invert(100%);
+  }
 }
