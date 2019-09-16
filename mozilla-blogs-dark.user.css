@@ -10,32 +10,49 @@
 @license      GPL-3.0
 ==/UserStyle== */
 @-moz-document domain("blog.mozilla.org"),
-domain("blog.nightly.mozilla.org") {
+               domain("blog.nightly.mozilla.org"),
+               domain("hacks.mozilla.org") {
+  :root {
+    --gray-1: #111;
+    --gray-2: #222;
+    --gray-3: #333;
+    --gray-5: #555;
+    --gray-a: #aaa;
+    --gray-c: #ccc;
+    --gray-48: #484848;
+    --gray-9a: #9a9a9a;
+    --blue-1: #00a7e0;
+    --blue-2: #093153;
+    --blue-3: #0f2639;
+  }
+}
+@-moz-document domain("blog.mozilla.org"),
+               domain("blog.nightly.mozilla.org") {
   body {
-    color: #aaa;
-    background-color: #111;
+    color: var(--gray-a);
+    background-color: var(--gray-1);
   }
   .nav-global, .nav-paging, #categories .cat-list a.on,
   .single .category-news .entry-content h3,
   .page .category-news .entry-content h3,
   .single .category-news .entry-content h4,
   .page .category-news .entry-content h4 {
-    background-color: #222;
+    background-color: var(--gray-2);
   }
   .entry-link:link, .entry-link:visited, .nav-paging a, #related-posts a:link,
   #related-posts a:visited, .nav-mozilla-menu a {
-    color: #00a7e0;
+    color: var(--blue-1);
   }
   .entry-info {
-    color: #484848;
+    color: var(--gray-48);
   }
   .pagination a, .pagination .current, #categories.is-active, #sidebar.is-active {
-    background-color: #333;
+    background-color: var(--gray-3);
   }
   #sidebar .widget_nav_menu li, #sidebar .widget_recent_entries li,
   #sidebar .widget_recent_comments li, #categories .cat-list a,
   #categories .cat-list a:hover {
-    background-color: #111;
+    background-color: var(--gray-1);
   }
   .nav-global .logo a {
     filter: invert(100%) brightness(60%);
@@ -50,28 +67,29 @@ domain("blog.nightly.mozilla.org") {
 }
 @-moz-document domain("hacks.mozilla.org") {
   body {
-    color: #9a9a9a;
-    background-color: #111;
+    color: var(--gray-9a);
+    background-color: var(--gray-1);
   }
   .newsletter, .post code, .post pre {
-    background-color: #222;
+    background-color: var(--gray-2);
   }
   .comments .children {
-    border-left-color: #333;
+    border-left-color: var(--gray-3);
   }
   .article img[src*=".svg"] {
-    background-color: #ccc;
+    background-color: var(--gray-c);
   }
   .footer {
-    background-color: #093153;
+    background-color: var(--blue-2);
   }
   .header {
-    background-image: url("img/blueprint.png"), linear-gradient(to bottom, #0f2639, #093153);
+    background-image: url("img/blueprint.png"),
+                          linear-gradient(to bottom, var(--blue-3), var(--blue-2));
   }
   button, input, optgroup, select, textarea {
-    background-color: #111;
-    border-color: #555;
-    color: #ccc;
+    background-color: var(--gray-1);
+    border-color: var(--gray-5);
+    color: var(--gray-c);
   }
   hr.dino::after {
     filter: invert(100%);
