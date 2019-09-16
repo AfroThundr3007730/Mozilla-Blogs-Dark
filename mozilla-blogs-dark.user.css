@@ -64,6 +64,13 @@
   .nav-global-donate a:before {
     filter: invert(50%);
   }
+  .single .entry-header .categories a, .page .entry-header .categories a {
+    background-color: var(--gray-2);
+    color: var(--gray-a);
+  }
+  .nav-paging .arrow-left .cls-1, .nav-paging .arrow-right .cls-1 {
+    stroke: var(--gray-c);
+  }
 }
 @-moz-document domain("hacks.mozilla.org") {
   body {
