@@ -9,7 +9,7 @@
 
 Dark theme for the Mozilla Blogs
 
-![Screenshot](https://i.imgur.com/mDEoF8h.jpg)
+![Screenshot](https://i.imgur.com/kPEbJNG.png)
 
 ## Installation
 
