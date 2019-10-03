@@ -28,9 +28,12 @@
 }
 @-moz-document domain("blog.mozilla.org"),
                domain("blog.nightly.mozilla.org") {
-  body {
+  html, body {
     color: var(--gray-a);
     background-color: var(--gray-1);
+  }
+  h1, h2, h3, h4, h5, h6, legend {
+    color: var(--blue-1);
   }
   .nav-global, .nav-paging, #categories .cat-list a.on,
   .single .category-news .entry-content h3,
