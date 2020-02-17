@@ -39,7 +39,8 @@
   .single .category-news .entry-content h3,
   .page .category-news .entry-content h3,
   .single .category-news .entry-content h4,
-  .page .category-news .entry-content h4 {
+  .page .category-news .entry-content h4, #site-info, .comment-list .comment,
+  .comment-list .pingback, .comment-list .trackback {
     background-color: var(--gray-2);
   }
   .entry-link:link, .entry-link:visited, .nav-paging a, #related-posts a:link,
@@ -49,7 +50,8 @@
   .entry-info {
     color: var(--gray-48);
   }
-  .pagination a, .pagination .current, #categories.is-active, #sidebar.is-active {
+  .pagination a, .pagination .current, #categories.is-active, #sidebar.is-active,
+  .comment-list .alt {
     background-color: var(--gray-3);
   }
   #sidebar .widget_nav_menu li, #sidebar .widget_recent_entries li,
@@ -73,6 +75,16 @@
   }
   .nav-paging .arrow-left .cls-1, .nav-paging .arrow-right .cls-1 {
     stroke: var(--gray-c);
+  }
+  #page {
+    background-color: var(--gray-1);
+    background-image: url("https://raw.githubusercontent.com/AfroThundr3007730/Mozilla-Blogs-Dark/master/images/bg-sky.png");
+  }
+  .comment-list .byuser {
+    border-color: var(--gray-5);
+  }
+  #site-title a {
+    color: var(--gray-a);
   }
 }
 @-moz-document domain("hacks.mozilla.org") {
