@@ -86,6 +86,11 @@
   #site-title a {
     color: var(--gray-a);
   }
+  textarea, input[type="email"], input[type="url"], input[type="tel"],
+  input[type="password"], input[type="search"], input[type="text"],
+  input[type="number"], input[type="date"], input[type="time"] {
+    background-color: var(--gray-2);
+  }
 }
 @-moz-document domain("hacks.mozilla.org") {
   body {
